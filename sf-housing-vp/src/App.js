@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
+import ListingsDisplay from './components/ListingsDisplay';
+import { Form, FormGroup, Label, Input, Button, } from 'reactstrap'
 
-// reactstrap imports
-import {
-  Form,
-  FormGroup,
-  Label,
-  Input,
-} from 'reactstrap'
+
 
 class App extends Component {
   render() {
     return (
-      <div style={{maxWidth:"50rem", margin:"auto"}}>
+      // Main Div
+      <div style={{maxWidth:"60rem", margin:"auto"}}>
 
         {/* Spacer */}
-        <div style={{height:"8rem"}}/>
+        <div style={{height:"3rem"}}/>
 
         {/* Title */}
         <div style={{textAlign:"center"}}>
@@ -34,25 +31,26 @@ class App extends Component {
           </FormGroup>
 
           <FormGroup>
-            <Label for="roomType">Room Type</Label>
+            <Label for="roomType">Listing Type</Label>
             <Input type="select" id="roomType" >
+              <option>Any</option>
+              <option>Room</option>
               <option>Studio</option>
               <option>House</option>
-              <option>Individual Room</option>
             </Input>
           </FormGroup>
 
-          <FormGroup>
-            <Label for="numRooms">Rooms</Label>
-            <Input type="select" id="numRooms" >
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4+</option>
-            </Input>
-          </FormGroup>
+          {/* Spacer */}
+          <div style={{height:"1rem"}}/>
 
+          <Button color="primary" style={{width:"100%", height:"3rem"}}>Search</Button>
         </Form>
+
+        {/* Spacer */}
+        <div style={{height:"1rem"}}/>
+
+        {/* The listings are here */}
+        <ListingsDisplay/>
       </div>
     );
   }
