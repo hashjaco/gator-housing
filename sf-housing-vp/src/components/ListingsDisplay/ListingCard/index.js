@@ -3,9 +3,9 @@ import { Button, } from "reactstrap";
 
 class ListingCard extends Component {
 
-render() {
-  return (
-    <div class="d-flex flex-row" style={{margin:"1rem 0", height:"12rem",}}>
+  render() {
+    return (
+      <div class="d-flex flex-row" style={{margin:"1rem 0", height:"12rem",}}>
 
         <img src={this.props.src} alt={this.props.title}
           style={{objectFit:"cover", width:"20rem", height:"100%", borderRadius:"4px"}}/>
