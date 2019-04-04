@@ -1,0 +1,30 @@
+{
+  "name": "sf-housing-vp-api",
+  "version": "1.0.0",
+  "description": "Backend processes for SFSU housing web application.",
+  "main": "app.js",
+  "scripts": {
+    "test": "\"Error.\\n No test command initialized.\\n\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CSC-648-SFSU/csc648-sp19-team14.git"
+  },
+  "keywords": [
+    "housing",
+    "sfsu",
+    "prototype"
+  ],
+  "author": "Team Win",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSC-648-SFSU/csc648-sp19-team14/issues"
+  },
+  "homepage": "https://github.com/CSC-648-SFSU/csc648-sp19-team14#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "pg": "^7.9.0"
+  }
+}
