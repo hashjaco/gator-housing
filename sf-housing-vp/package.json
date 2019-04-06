@@ -2,18 +2,31 @@
   "name": "sf-housing-vp",
   "version": "0.1.0",
   "private": true,
+  "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "bootstrap": "^4.3.1",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "jquery": "^1.9.1",
+    "path": "^0.12.7",
+    "pg": "^7.9.0",
+    "pg-native": "^3.0.0",
+    "popper.js": "^1.14.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
-    "reactstrap": "^7.1.0"
+    "reactstrap": "^7.1.0",
+    "semver": "^6.0.0",
+    "ts-pnp": "^1.0.1",
+    "typescript": "^3.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon server/app.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -23,5 +36,15 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CSC-648-SFSU/csc648-sp19-team14.git"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.10",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.3.0"
+  }
 }
