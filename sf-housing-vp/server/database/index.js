@@ -17,7 +17,7 @@ class Database {
         });
 
         this._pool.on('error', (err, client) => {
-            console.error('Unexpected error on idle PostgreSQL client', err);
+            console.error('Unexpected error on idle PostgreSQL public', err);
             process.exit(-1);
         });
     }

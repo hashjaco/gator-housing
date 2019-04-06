@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd91de86-ba8c-4ad3-b2dd-4286571aafc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/queries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Milestones/M0/All M0 docs and files go here, no code should be here" beforeDir="false" afterPath="$PROJECT_DIR$/../Milestones/M0/All M0 docs and files go here, no code should be here" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Milestones/M1/All M1 docs and files go here, no code should be here" beforeDir="false" afterPath="$PROJECT_DIR$/../Milestones/M1/All M1 docs and files go here, no code should be here" afterDir="false" />
@@ -20,508 +15,20 @@
       <change beforePath="$PROJECT_DIR$/../individual-pages/img/jon-pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../individual-pages/img/jon-pic.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../individual-pages/jon-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../individual-pages/jon-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../individual-pages/template-profile-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../individual-pages/template-profile-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/.env.development" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/.idea/sf-housing-vp-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sf-housing-vp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/db/queries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/.bin/mime" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/.bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/accepts/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/accepts/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/accepts/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/accepts/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/accepts/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/array-flatten/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/array-flatten/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/array-flatten/array-flatten.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/array-flatten/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/body-parser/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/body-parser/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/body-parser/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/body-parser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/body-parser/lib/read.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/body-parser/lib/types/json.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/body-parser/lib/types/raw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/body-parser/lib/types/text.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/body-parser/lib/types/urlencoded.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/body-parser/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/buffer-writer/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/buffer-writer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/buffer-writer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/buffer-writer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/buffer-writer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/buffer-writer/test/mocha.opts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/buffer-writer/test/writer-tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/bytes/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/bytes/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/bytes/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/bytes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/bytes/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/content-disposition/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/content-disposition/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/content-disposition/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/content-disposition/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/content-disposition/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/content-type/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/content-type/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/content-type/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/content-type/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/content-type/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/cookie-signature/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/cookie-signature/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/cookie-signature/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/cookie-signature/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/cookie-signature/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/cookie/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/cookie/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/cookie/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/cookie/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/cookie/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/.coveralls.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/component.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/src/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/src/debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/src/inspector-log.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/debug/src/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/depd/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/depd/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/depd/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/depd/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/depd/lib/browser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/depd/lib/compat/callsite-tostring.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/depd/lib/compat/event-listener-count.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/depd/lib/compat/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/depd/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/destroy/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/destroy/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/destroy/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/destroy/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/dotenv/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/dotenv/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/dotenv/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/dotenv/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/dotenv/lib/cli-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/dotenv/lib/env-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/dotenv/lib/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/dotenv/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ee-first/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ee-first/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ee-first/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ee-first/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/encodeurl/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/encodeurl/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/encodeurl/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/encodeurl/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/encodeurl/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/escape-html/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/escape-html/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/escape-html/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/escape-html/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/etag/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/etag/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/etag/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/etag/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/etag/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/application.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/express.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/middleware/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/middleware/query.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/request.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/response.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/router/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/router/route.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/lib/view.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/express/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/finalhandler/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/finalhandler/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/finalhandler/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/finalhandler/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/finalhandler/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/forwarded/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/forwarded/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/forwarded/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/forwarded/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/forwarded/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/fresh/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/fresh/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/fresh/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/fresh/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/fresh/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/http-errors/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/http-errors/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/http-errors/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/http-errors/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/http-errors/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/Changelog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/dbcs-data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/sbcs-data-generated.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/sbcs-data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/tables/big5-added.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/tables/cp936.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/tables/cp949.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/tables/cp950.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/tables/eucjp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/tables/gbk-added.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/tables/shiftjis.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/lib/bom-handling.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/lib/extend-node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/lib/streams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/iconv-lite/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/inherits/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/inherits/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/inherits/inherits.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/inherits/inherits_browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/inherits/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ipaddr.js/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ipaddr.js/ipaddr.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ipaddr.js/lib/ipaddr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ipaddr.js/lib/ipaddr.js.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ipaddr.js/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/media-typer/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/media-typer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/media-typer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/media-typer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/media-typer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/merge-descriptors/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/merge-descriptors/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/merge-descriptors/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/merge-descriptors/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/merge-descriptors/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/methods/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/methods/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/methods/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/methods/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/methods/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-db/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-db/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-db/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-db/db.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-db/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-db/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-types/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-types/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-types/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-types/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime-types/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime/build/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime/cli.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime/mime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/mime/types.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/negotiator/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/negotiator/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/negotiator/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/negotiator/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/negotiator/lib/charset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/negotiator/lib/encoding.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/negotiator/lib/language.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/negotiator/lib/mediaType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/negotiator/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/on-finished/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/on-finished/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/on-finished/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/on-finished/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/on-finished/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/packet-reader/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/packet-reader/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/packet-reader/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/packet-reader/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/packet-reader/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/parseurl/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/parseurl/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/parseurl/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/parseurl/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/parseurl/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/path-to-regexp/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/path-to-regexp/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/path-to-regexp/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/path-to-regexp/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/path-to-regexp/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-connection-string/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-connection-string/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-connection-string/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-connection-string/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-connection-string/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-connection-string/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-connection-string/test/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-int8/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-int8/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-int8/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-int8/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/bring-your-own-promise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/connection-strings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/connection-timeout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/ending.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/error-handling.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/events.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/idle-timeout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/logging.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/mocha.opts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/setup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/sizing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/submittable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/timeout.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-pool/test/verify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-types/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-types/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-types/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-types/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-types/lib/arrayParser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-types/lib/binaryParsers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-types/lib/textParsers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-types/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-types/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg-types/test/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/SPONSORS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/connection-parameters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/connection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/defaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/native/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/native/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/native/query.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/query.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/result.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/sasl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/type-overrides.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pg/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pgpass/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pgpass/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pgpass/lib/helper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pgpass/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/pgpass/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-array/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-array/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-array/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-array/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-array/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-bytea/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-bytea/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-bytea/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-bytea/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-date/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-date/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-date/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-date/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-interval/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-interval/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-interval/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-interval/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/postgres-interval/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/proxy-addr/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/proxy-addr/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/proxy-addr/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/proxy-addr/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/proxy-addr/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/dist/qs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/lib/formats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/lib/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/lib/stringify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/test/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/test/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/test/stringify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/qs/test/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/range-parser/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/range-parser/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/range-parser/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/range-parser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/range-parser/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/raw-body/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/raw-body/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/raw-body/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/raw-body/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/raw-body/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/raw-body/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safe-buffer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safe-buffer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safe-buffer/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safe-buffer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safe-buffer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safer-buffer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safer-buffer/Porting-Buffer.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safer-buffer/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safer-buffer/dangerous.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safer-buffer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safer-buffer/safer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/safer-buffer/tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/foot.js.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/head.js.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/semver.browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/semver.browser.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/semver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/semver.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/semver.min.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/test/amd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/test/big-numbers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/test/clean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/test/gtr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/test/ltr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/test/major-minor-patch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/semver/test/no-module.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/send/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/send/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/send/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/send/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/send/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/serve-static/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/serve-static/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/serve-static/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/serve-static/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/serve-static/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/setprototypeof/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/setprototypeof/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/setprototypeof/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/setprototypeof/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/setprototypeof/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/LICENCE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/examples/pretty.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/readme.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/test/options.asynct.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/test/partitioned_unicode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/test/split.asynct.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/split/test/try_catch.asynct.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/statuses/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/statuses/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/statuses/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/statuses/codes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/statuses/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/statuses/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/LICENSE.APACHE2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/LICENSE.MIT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/readme.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/test/async.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/test/auto-destroy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/test/buffering.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/test/end.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/through/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/type-is/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/type-is/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/type-is/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/type-is/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/type-is/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/unpipe/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/unpipe/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/unpipe/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/unpipe/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/unpipe/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/utils-merge/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/utils-merge/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/utils-merge/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/utils-merge/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/utils-merge/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/vary/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/vary/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/vary/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/vary/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/vary/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/xtend/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/xtend/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/xtend/LICENCE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/xtend/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/xtend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/xtend/immutable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/xtend/mutable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/xtend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/node_modules/xtend/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sf-housing-vp-api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/HeaderBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListingsDisplay/ListingCard/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/ListingsDisplay/ListingCard/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListingsDisplay/ListingCard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/ListingsDisplay/ListingCard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListingsDisplay/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/ListingsDisplay/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/HeaderBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/ListingsDisplay/ListingCard/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListingsDisplay/ListingCard/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/ListingsDisplay/ListingCard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListingsDisplay/ListingCard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/ListingsDisplay/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListingsDisplay/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/database/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -537,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/database/queries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="74" column="17" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="74" selection-end-column="17" />
+            <state relative-caret-position="435">
+              <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -552,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -566,6 +73,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
               <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -607,6 +123,7 @@
         <option value="$PROJECT_DIR$/server/database/queries.js" />
         <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/server/database/index.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -640,13 +157,7 @@
             <path>
               <item name="sf-housing-vp" type="b2602c69:ProjectViewProjectNode" />
               <item name="sf-housing-vp" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sf-housing-vp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sf-housing-vp" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -673,6 +184,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -691,7 +203,7 @@
     <configuration name="App.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="App.js" working-dir="$PROJECT_DIR$/src/client">
       <method v="2" />
     </configuration>
-    <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" path-to-node="/usr/local/Cellar/node/11.13.0/bin/node" nameIsGenerated="true" path-to-js-file="App.js" working-dir="$PROJECT_DIR$/client">
+    <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" path-to-node="/usr/local/Cellar/node/11.13.0/bin/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/App.js" working-dir="$PROJECT_DIR$/public">
       <method v="2" />
     </configuration>
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/server">
@@ -721,23 +233,23 @@
       <option name="presentableId" value="Default" />
       <updated>1554436908863</updated>
       <workItem from="1554436910059" duration="4862000" />
-      <workItem from="1554442803681" duration="18617000" />
+      <workItem from="1554442803681" duration="19769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23479000" />
+    <option name="totallyTimeSpent" value="24631000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="758" y="0" width="682" height="900" extended-state="6" />
+    <frame x="656" y="0" width="784" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15582451" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30799475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29638556" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -788,7 +300,7 @@
     <entry file="file://$PROJECT_DIR$/node_modules/webpack/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/ListingsDisplay/ListingCard/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ListingsDisplay/ListingCard/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1" />
       </provider>
@@ -800,10 +312,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/ListingsDisplay/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ListingsDisplay/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
@@ -838,7 +347,7 @@
         <state relative-caret-position="-63" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/App.test.js">
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -883,7 +392,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/App.js">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
@@ -893,19 +402,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.js">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -916,17 +418,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/database/queries.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="74" column="17" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="74" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/queries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
