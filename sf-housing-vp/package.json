@@ -19,14 +19,19 @@
     "reactstrap": "^7.1.0",
     "semver": "^6.0.0",
     "ts-pnp": "^1.0.1",
-    "typescript": "^3.4.2"
+    "typescript": "^3.4.2",
+    "webpack": "^4.28.3"
+  },
+  "homepage": "http://sfsu-housing.appspot.com",
+  "engines": {
+    "node": ">=8.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "nodemon server/app.js"
+    "server": "node app.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,8 +48,6 @@
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
-    "nodemon": "^1.18.10",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.3.0"
+    "nodemon": "^1.18.10"
   }
 }
