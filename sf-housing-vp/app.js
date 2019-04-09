@@ -19,13 +19,13 @@ app.get('/', function(req, res) {
 
 app.use('/assets/', express.static('./assets/'));
 
-/* Routes */
+/* Routes for testing */
 
-app.get('/listings', db.getListings);
-app.get('/listings/:id', db.getListingById);
-app.post('/listings', db.createListing);
-app.put('/listings/:id', db.updateListing);
-app.delete('/listings/:id', db.deleteListing);
+app.get('/properties', db.getProperties);
+app.get('/properties/:id', db.getPropertyById);
+app.post('/properties', db.createProperty);
+app.put('/properties/:id', db.updateProperty);
+app.delete('/properties/:id', db.deleteProperty);
 
 app.listen(PORT);
 
