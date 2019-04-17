@@ -5,12 +5,28 @@ import { Form, FormGroup, Label, Input, Button, } from 'reactstrap';
 
 
 class App extends Component {
-
+	constructor(props) {
+    super(props);
+  }
     state = {
         listings: []
     }
 
-
+	searchListing(type){
+		let self = this;
+        fetch('/se', {
+            method: 'GET'
+        }).then(function(response) {
+            if (response.status >= 400) {
+                throw new Error("Bad response from server");
+            }
+            return response.json();
+        }).then(function(data) {
+            self.setState({properties: data});
+        }).catch(err => {
+        console.log('caught it!',err);
+        })
+	}
 
   render() {
     return (
@@ -49,7 +65,7 @@ class App extends Component {
           {/* Spacer */}
           <div style={{height:"1rem"}}/>
 
-          <Button color="primary" style={{width:"100%", height:"3rem"}}>Search</Button>
+          <Button color="primary" style={{width:"100%", height:"3rem"}} onClick={this.searchListing('House')}>Search</Button>
         </Form>
 
         {/* Spacer */}

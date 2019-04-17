@@ -1,6 +1,6 @@
 const { Pool } = require('pg');
 
-const CONNECTION_STRING = process.env.DATABASE_URL ||'35.230.96.183';
+const CONNECTION_STRING = process.env.DATABASE_URL ||'35.236.40.57';
 const SSL = process.env.NODE_ENV === 'production';
 
 

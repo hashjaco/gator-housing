@@ -1,8 +1,8 @@
 const Pool = require('pg').Pool;
 const pool = new Pool({
-    user: 'instagator',
-    host: '35.230.96.183',
-    database: 'instagator',
+    user: 'team14',
+    host: 'postgres-team14.cxfqlkmdb4ek.us-east-2.rds.amazonaws.com',
+    database: 'sfsu_housing',
     password: 'Weareteam14',
     port: 5432,
 });
@@ -19,9 +19,9 @@ const getProperties = (req, res) => {
 
 /* Return properties by id */
 const getPropertyById = (req, res) => {
-    const id = parseInt(req.params.property_id);
+    const id = parseInt(req.params.id);
 
-    pool.query('SELECT * FROM properties WHERE id = $1', [id], (error, results) => {
+    pool.query('SELECT * FROM properties WHERE property_id = $1', [id], (error, results) => {
         if (error) {
             throw error;
         }
@@ -45,6 +45,17 @@ const searchProperties = (req, res) => {
 
     pool.query(`SELECT to_tsvector(${search});`);
 }
+
+const searchPropertiesByListings = (req, res) => {
+	    const type = parseInt(req.params.property_type);
+
+    pool.query('SELECT * FROM properties WHERE property_type = $1', [t], (error, results) => {
+        if (error) {
+            throw error;
+        }
+        res.status(200).json(results.rows);
+    });
+};
 
 const updateProperty = (req, res) => {
     const id = parseInt(req.params.properties_id);
