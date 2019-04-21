@@ -14,7 +14,7 @@ class App extends Component {
 
 	searchListing(type){
 		let self = this;
-        fetch('/se', {
+        fetch('/properties', {
             method: 'GET'
         }).then(function(response) {
             if (response.status >= 400) {
