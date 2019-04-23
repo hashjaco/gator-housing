@@ -20,7 +20,7 @@ const getProperties = (req, res) => {
 /* Return properties by id */
 const getPropertyById = (req, res) => {
     const id = parseInt(req.params.id);
-
+    console.log(id);
     pool.query('SELECT * FROM properties WHERE property_id = $1', [id], (error, results) => {
         if (error) {
             throw error;
@@ -41,9 +41,17 @@ const createProperty = (req, res) => {
 };
 
 const searchProperties = (req, res) => {
-    const search = req.body;
+    const search = req.params.key;
+    //pool.query(`SELECT to_tsvector(${search});`);
+    pool.query(`SELECT * FROM properties 
+    WHERE to_tsvector(address || ' ' || property_type || ' ' || zipcode || ' ' || price) @@ to_tsquery($1)
+    ORDER BY post_date DESC`,[search], (error, results) => {
+        if (error){
+            throw error;
+        }
+        res.status(200).json(results.rows);
+    });
 
-    pool.query(`SELECT to_tsvector(${search});`);
 }
 
 const searchPropertiesByListings = (req, res) => {
