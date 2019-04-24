@@ -8,7 +8,8 @@ class App extends Component {
     super(props);
     this.state = {
       searchClicked: false,
-      topicBox: null,
+      topicBox: "",
+      propertyType: "Any",
       searchWord: "",
     };
 
@@ -25,14 +26,14 @@ class App extends Component {
   }
 
    clickSearch() {
-    console.log( this.state.topicBox); 
+    console.log( this.state.topicBox , this.state.propertyType); 
     this.setState({searchClicked: true });
   }
 
   renderListings(){
     var listingToDisplay;
     if (this.state.searchClicked) {
-      listingToDisplay = <ListingsDisplay searchType= {"/searchproperties/"+this.state.topicBox}  />;
+      listingToDisplay = <ListingsDisplay searchType= {"/searchproperties/"+this.state.topicBox} propertyType={this.state.propertyType}  />;
     } else {
       listingToDisplay = <ListingsDisplay searchType= '/properties' />;
     }
@@ -71,7 +72,7 @@ class App extends Component {
 
           <FormGroup>
             <Label for="roomType">Listing Type</Label>
-            <Input type="select" id="roomType" >
+            <Input type="select" name="propertyType" id="roomType" onChange={this.handleChange}>
               <option>Any</option>
               <option>Room</option>
               <option>Studio</option>

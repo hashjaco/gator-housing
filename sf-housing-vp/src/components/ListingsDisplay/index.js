@@ -5,7 +5,6 @@ class ListingsDisplay extends Component {
 	constructor(props) {
         super(props)
         this.state = {
-          type : this.props.searchType,
             properties: []
         }
         this.updateListing = this.updateListing.bind(this);
@@ -16,13 +15,14 @@ class ListingsDisplay extends Component {
     }
 
     componentDidUpdate(prevProps){
-      if(JSON.stringify(this.props.searchType) !== JSON.stringify(prevProps.searchType))
+      if((JSON.stringify(this.props.searchType) !== JSON.stringify(prevProps.searchType)) || (JSON.stringify(this.props.propertyType) !== JSON.stringify(prevProps.propertyType)))
       {
             this.updateListing();
       }
     }
 
     updateListing(){
+      console.log(this.props.propertyType);
       let self = this;
         fetch(this.props.searchType, {
             method: 'GET'

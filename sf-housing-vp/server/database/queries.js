@@ -32,7 +32,7 @@ const getPropertyById = (req, res) => {
 const createProperty = (req, res) => {
     const { type, price, image_path } = req.body;
 
-    pool.query ('INSERT INTO properties (type, price, image_path) VALUES ($1, $2, $3, $4)', [type, price, image_path], (error, results) => {
+    pool.query ('INSERT INTO properties (property_type, price, image_path) VALUES ($1, $2, $3)', [type, price, image_path], (error, results) => {
         if (error){
             throw error;
         }
@@ -41,17 +41,17 @@ const createProperty = (req, res) => {
 };
 
 const searchProperties = (req, res) => {
-    const search = req.params.key;
-    //pool.query(`SELECT to_tsvector(${search});`);
+    const search = '%'+req.params.key+'%';
+
     pool.query(`SELECT * FROM properties 
-    WHERE to_tsvector(address || ' ' || property_type || ' ' || zipcode || ' ' || price) @@ to_tsquery($1)
+    WHERE address || ' ' || property_type || ' ' || zipcode || ' ' || price  ILIKE  ($1)
     ORDER BY post_date DESC`,[search], (error, results) => {
         if (error){
             throw error;
         }
         res.status(200).json(results.rows);
     });
-
+    
 }
 
 const searchPropertiesByListings = (req, res) => {
