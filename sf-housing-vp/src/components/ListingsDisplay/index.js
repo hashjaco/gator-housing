@@ -23,6 +23,7 @@ class ListingsDisplay extends Component {
 
     updateListing(){
       console.log(this.props.propertyType);
+      if (!this.props.searchType) return;
       let self = this;
         fetch(this.props.searchType, {
             method: 'GET'
@@ -42,15 +43,22 @@ class ListingsDisplay extends Component {
 
   render() {
 
-    if (this.state.properties) {
-      console.log(JSON.stringify(this.state.properties))
+    if (!this.state.properties) {
+      return(
+        <div>Properties does not exist!</div>
+      )
+    }
+
+    if (this.state.properties.length === 0) {
+      return(
+        <div>No results found.</div>
+      )
     }
 
     return (
       <div class="d-flex flex-column">
         {this.state.properties.map(member =>
  
-                   
         <ListingCard title="A House" type={member.property_type} src="https://media.gettyimages.com/photos/traditional-suburban-house-picture-id103761767?s=612x612"
           description={member.address}
           price={member.price} />
