@@ -29,20 +29,17 @@ class HeaderBar extends Component {
         <Navbar className='main-navbar flex-nowrap bg-white' light expand='md' fixed={'top'} >
 
           {/* Logo */}
-          <NavbarBrand href='/'>🐊 GatorHouse</NavbarBrand>
+          <NavbarBrand href='/'><span role='img' aria-label="gator">🐊</span>GatorHouse</NavbarBrand>
 
           {/* Link Buttons */}
           <NavbarToggler onClick={this.toggleNavbar} />
           <Collapse isOpen={this.state.open} navbar>
             <Nav className='ml-auto' navbar>
               <NavItem>
-                <NavLink tag={Link} to="/">Home</NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink tag={Link} to="/post">Post</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/login">Login</NavLink>
+                <NavLink tag={Link} to="/about">About</NavLink>
               </NavItem>
               <UncontrolledDropdown>
                 <DropdownToggle nav caret>
@@ -52,8 +49,8 @@ class HeaderBar extends Component {
                   <DropdownItem tag={Link} to="/dashboard">
                     Dashboard
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/about">
-                    About
+                  <DropdownItem tag={Link} to="/login">
+                    Login
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
