@@ -1,4 +1,7 @@
+import './index.css'
 import React, { Component, } from 'react';
+import { Link } from 'react-router-dom';
+
 
 class ListingCard extends Component {
 
@@ -8,13 +11,14 @@ class ListingCard extends Component {
 
   render() {
     return (
-      <div class="d-flex flex-row bg-light" style={{margin:"1rem 0", height:"12rem", 
-        borderRadius:"4px"}}>
+      <Link className="listingcard d-flex flex-row" to="/desc">
 
         {/* Image */}
         <div>
-          <img src={this.props.src} alt={this.props.title}
-            style={{objectFit:"cover", width:"20rem", height:"100%", borderRadius:"4px"}}/>
+          <img className="listingcard-image" src={this.props.src} alt={this.props.title}/>
+          <div className="listingcard-image-text">
+            <p>{this.toPriceString(this.props.price)}</p>
+          </div>
         </div>
 
         {/* Spacer */}
@@ -24,16 +28,13 @@ class ListingCard extends Component {
         <div class="d-flex flex-column">
           <div style={{marginBottom:"auto"}}>
             <div style={{height:"0.5rem"}} />
-            <p class="text-secondary" style={{lineHeight:"0.8rem", textTransform:"uppercase"}}>{this.props.type}</p>
-            <p style={{lineHeight:"0.8rem", fontWeight:"bold", fontSize:"1.3rem"}}>{this.props.title}</p>
+            <p className="listingcard-type">{this.props.type}</p>
+            <p className="listingcard-title">{this.props.title}</p>
             <p>{this.props.description}</p>
-          </div>
-          <div>
-            <p style={{fontSize:"1.3rem"}}>{this.toPriceString(this.props.price)}</p>
           </div>
         </div>
 
-      </div>
+      </Link>
     )
   }
 

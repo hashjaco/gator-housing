@@ -29,7 +29,7 @@ class HeaderBar extends Component {
         <Navbar className='main-navbar flex-nowrap bg-white' light expand='md' fixed={'top'} >
 
           {/* Logo */}
-          <NavbarBrand href='/'><span role='img' aria-label="gator">🐊</span>GatorHouse</NavbarBrand>
+          <NavbarBrand href='/'><span role='img' aria-label="gator">🐊</span> GatorHouse</NavbarBrand>
 
           {/* Link Buttons */}
           <NavbarToggler onClick={this.toggleNavbar} />

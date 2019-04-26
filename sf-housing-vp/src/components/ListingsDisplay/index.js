@@ -58,11 +58,13 @@ class ListingsDisplay extends Component {
     return (
       <div class="d-flex flex-column">
         {this.state.properties.map(member =>
- 
-        <ListingCard title="A House" type={member.property_type} src="https://media.gettyimages.com/photos/traditional-suburban-house-picture-id103761767?s=612x612"
-          description={member.address}
-          price={member.price} />
-		   )}
+          <ListingCard 
+            title="A House" 
+            type={member.property_type} 
+            src={member.image_path}
+            description={member.address}
+            price={member.price} />
+        )}
       </div>
     )
   }
