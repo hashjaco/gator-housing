@@ -44,8 +44,7 @@ const searchProperties = (req, res) => {
     const search = '%'+req.params.key+'%';
 
     pool.query(`SELECT * FROM properties 
-    WHERE address || ' ' || property_type || ' ' || zipcode || ' ' || price  ILIKE  ($1)
-    ORDER BY post_date DESC`,[search], (error, results) => {
+    WHERE address || ' ' || property_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)`,[search], (error, results) => {
         if (error){
             throw error;
         }
