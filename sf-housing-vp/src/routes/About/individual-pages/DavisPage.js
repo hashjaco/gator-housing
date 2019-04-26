@@ -8,7 +8,6 @@ class DavisPage extends Component {
   render() {
     return (
       <div style={{marginTop:"2rem"}}>
-
         <div>
         {/* This imports Bootstrap stuff */}
         <meta charSet="utf-8" />
@@ -25,7 +24,6 @@ class DavisPage extends Component {
             </div>
         </div>
         </div>
-
       </div>
     )
   }

@@ -46,6 +46,7 @@ class Login extends Component {
       <Container className="App">
       <br></br><br></br><br></br><br></br>
         <h2>Log In</h2>
+        <br></br>
         <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
           <Col>
             <FormGroup>
@@ -64,10 +65,10 @@ class Login extends Component {
                           } }
               />
               <FormFeedback valid>
-                That's a tasty looking email you've got there.
+                Valid Email
               </FormFeedback>
               <FormFeedback>
-                Uh oh! Looks like there is an issue with your email. Please input a correct email.
+               Invalid Email
               </FormFeedback>
               <FormText>Your username is most likely your email.</FormText>
             </FormGroup>
@@ -87,8 +88,8 @@ class Login extends Component {
           </Col>
           <Container>
             <Row>
-              <Col><Button color="primary">Login</Button></Col>
-              <Col><Button color="success">Sign Up</Button></Col>
+              <Col><Button color="success">Login</Button></Col>
+              <Col><Button color="primary">Sign Up</Button></Col>
             </Row>
           </Container>
       </Form>
