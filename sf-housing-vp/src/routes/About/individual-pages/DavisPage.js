@@ -21,7 +21,7 @@ class DavisPage extends Component {
             <img alt="A lovely image of Davis" src={davispic} className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
             {/* Briefly describe yourself */}
             <div style={{margin: 'auto', maxWidth: '25rem'}}>
-            <p className="text-center">Hi my name is Davis Hoang, I am currently a 5th year at SFSU. I hope to get into AI development one day.</p>
+            <p className="text-center">Hi my name is Davis Hoang, I am currently a 5th year at SFSU</p>
             </div>
         </div>
         </div>
