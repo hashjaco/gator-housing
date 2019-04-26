@@ -9,7 +9,7 @@ const pool = new Pool({
 
 /* Return all properties */
 const getProperties = (req, res) => {
-    pool.query('SELECT * FROM properties ORDER BY property_id ASC', (error, results) => {
+    pool.query('SELECT * FROM properties ORDER BY id ASC', (error, results) => {
         if (error){
             throw error;
         }
@@ -21,7 +21,7 @@ const getProperties = (req, res) => {
 const getPropertyById = (req, res) => {
     const id = parseInt(req.params.id);
     console.log(id);
-    pool.query('SELECT * FROM properties WHERE property_id = $1', [id], (error, results) => {
+    pool.query('SELECT * FROM properties WHERE id = $1', [id], (error, results) => {
         if (error) {
             throw error;
         }
