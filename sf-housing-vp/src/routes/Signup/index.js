@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
 import {Container, Col, Form,FormGroup, Label, Input,Button, FormText, FormFeedback,Row} from 'reactstrap';
 
 
-class Login extends Component {
+class Signup extends Component {
   constructor(props) {
     super(props);
       this.state = {
@@ -42,14 +41,42 @@ class Login extends Component {
   }
 
   render() {
-    const { email, password } = this.state;
+    const { email, password ,conpassword, fname,lname } = this.state;
     return (
       <Container className="App">
       <br></br><br></br><br></br><br></br>
-        <h2>Log In</h2>
+        <h2>Sign ups</h2>
         <br></br>
         <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
           <Col>
+          <Row>
+          <Col>
+            <FormGroup>
+              <Label for="examplePassword">First Name</Label>
+              <Input
+                type="firstname"
+                name="fn"
+                id="firstname"
+                placeholder="john"
+                value={ fname }
+                onChange={ (e) => this.handleChange(e) }
+            />
+            </FormGroup>
+          </Col>
+          <Col>
+            <FormGroup>
+              <Label for="examplePassword">Last Name</Label>
+              <Input
+                type="lastname"
+                name="ln"
+                id="lastname"
+                placeholder="doe"
+                value={ lname }
+                onChange={ (e) => this.handleChange(e) }
+            />
+            </FormGroup>
+          </Col>
+          </Row>
             <FormGroup>
               <Label>Username</Label>
               <Input
@@ -71,9 +98,10 @@ class Login extends Component {
               <FormFeedback>
                Invalid Email
               </FormFeedback>
-              <FormText>Your username is most likely your email.</FormText>
+              <FormText>Sign up with your email as your Username</FormText>
             </FormGroup>
           </Col>
+          <Row>
           <Col>
             <FormGroup>
               <Label for="examplePassword">Password</Label>
@@ -87,10 +115,23 @@ class Login extends Component {
             />
             </FormGroup>
           </Col>
+          <Col>
+            <FormGroup>
+              <Label for="examplePassword">Confirm Password</Label>
+              <Input
+                type="password"
+                name="conpassword"
+                id="examplePassword"
+                placeholder="********"
+                value={ conpassword }
+                onChange={ (e) => this.handleChange(e) }
+            />
+            </FormGroup>
+          </Col>
+          </Row>
           <Container>
             <Row>
-              <Col><Button color="success">Login</Button></Col>
-              <Col><Button color="primary" tag={Link} to="/signup">Sign Up</Button></Col>
+              <Col><Button color="primary">submit</Button></Col>
             </Row>
           </Container>
       </Form>
@@ -99,4 +140,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default Signup;

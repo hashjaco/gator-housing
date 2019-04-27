@@ -25,9 +25,6 @@ class About extends Component {
             <Route exact path ='/about/hashim-page' component={HashimPage}/>
             <Route exact path ='/about/jarrett-page' component={JarrettPage}/>
             <Route exact path ='/about/shalaka-page' component={ShalakaPage}/>
-
-
-
           </BrowserRouter>
 
       </div>

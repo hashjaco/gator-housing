@@ -8,7 +8,7 @@ import Post from './routes/Post';
 import About from './routes/About';
 import Dashboard from './routes/Dashboard';
 import Login from './routes/Login';
-
+import Signup from './routes/Signup';
 
 
 class App extends Component {
@@ -27,6 +27,7 @@ class App extends Component {
           <Route exact path='/login' component={Login} />
           <Route exact path='/about' component={About} />
           <Route exact path='/dashboard' component={Dashboard} />
+          <Route exact path='/signup' component={Signup} />
         </BrowserRouter>
         
       </div>
