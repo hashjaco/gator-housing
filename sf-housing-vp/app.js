@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
 
 app.use('/assets/', express.static('./assets/'));
 
-/* Routes for testing */
+
 
 app.get('/properties', db.getProperties);
 app.get('/properties/:id', db.getPropertyById);
