@@ -7,6 +7,24 @@ import GoogleMapReact from 'google-map-react';
 const MAPS_API_KEY = "AIzaSyBllbHD-lG5no2m1IFdtdckhDETM4n4dw4"
 
 
+const MapLabel = ({ text }) => (
+  <div style={{
+    color: 'white', 
+    background: '#f44336',
+    padding: '8px 8px',
+    display: 'inline-flex',
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    border: '1px solid #ba000d',
+    borderRadius: '100%',
+    transform: 'translate(-50%, -50%)'
+  }}>
+    {text}
+  </div>
+);
+
+
 class ListingCard extends Component {
 
   static defaultProps = {
@@ -14,7 +32,7 @@ class ListingCard extends Component {
       lat: 37.721558,
       lng: -122.478165,
     },
-    zoom: 11
+    zoom: 15
   };
 
   constructor(props){ 
@@ -69,7 +87,12 @@ class ListingCard extends Component {
               <GoogleMapReact
                 bootstrapURLKeys={{key: MAPS_API_KEY}}
                 defaultCenter={this.props.center}
-                defaultZoom={this.props.zoom} />
+                defaultZoom={this.props.zoom} >
+                <MapLabel
+                  lat={this.props.center.lat}
+                  lng={this.props.center.lng} 
+                  text="" />
+              </GoogleMapReact>
             </div>
             
           </ModalBody>

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import ListingCard from "./ListingCard";
 
-const MAPS_API_KEY = "AIzaSyBllbHD-lG5no2m1IFdtdckhDETM4n4dw4"
-
 class ListingsDisplay extends Component {
 	constructor(props) {
         super(props)
