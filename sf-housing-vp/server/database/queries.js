@@ -89,7 +89,7 @@ const updateProperty = (req, res) => {
     pool.query(
         'UPDATE properties SET type = $1, price = $2 WHERE id = $3',
         [type, price, id],
-        (error, results) => {
+        (error, res) => {
             if (error) {
                 throw error;
             }
