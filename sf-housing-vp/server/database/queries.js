@@ -43,17 +43,43 @@ const createProperty = (req, res) => {
 };
 
 const searchProperties = (req, res) => {
-    const search = '%'+req.params.key+'%';
-    const searchArray = search.split(" ");
-    searchArray.forEach(string => {
-      pool.query(`SELECT * FROM properties
-      WHERE address || ' ' || property_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)`,[search], (error, results) => {
-          if (error){
-              throw error;
-          }
-          res.status(200).json(results.rows);
-      });
-    });
+    const searchText = req.params.key;
+    const propertyType = req.params.type;
+    let search;
+    if(searchText === "default"){
+        search = '%%';
+    }
+    else{
+        search = '%'+req.params.key+'%';
+    }
+
+    if(propertyType !== "Any"){
+        console.log("1st DB here",req.params.key,req.params.type);
+        const searchArray = search.split(" ");
+        searchArray.forEach(string => {
+        pool.query(`SELECT * FROM properties
+        WHERE address || ' ' || property_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)
+        AND property_type = ($2)`,[search, propertyType], (error, results) => {
+            if (error){
+                throw error;
+            }
+            res.status(200).json(results.rows);
+        });
+        });
+    }
+    else{
+        console.log("2nd DB here",req.params.key,req.params.type);
+        const searchArray = search.split(" ");
+        searchArray.forEach(string => {
+        pool.query(`SELECT * FROM properties
+        WHERE address || ' ' || property_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)`,[search], (error, results) => {
+            if (error){
+                throw error;
+            }
+            res.status(200).json(results.rows);
+        });
+        });
+    }   
 }
 
 const updateProperty = (req, res) => {

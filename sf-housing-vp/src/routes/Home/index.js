@@ -26,14 +26,17 @@ class App extends Component {
   }
 
    clickSearch() {
-    console.log( this.state.topicBox , this.state.propertyType); 
     this.setState({searchClicked: true });
   }
 
   renderListings(){
     var listingToDisplay;
     if (this.state.searchClicked) {
-      listingToDisplay = <ListingsDisplay searchType= {"/searchproperties/"+this.state.topicBox} propertyType={this.state.propertyType}  />;
+      if(this.state.topicBox === "" || this.state.topicBox === null){
+        listingToDisplay = <ListingsDisplay searchType= {"/searchproperties/default/"+this.state.propertyType} propertyType={this.state.propertyType}  />;
+      }
+      else
+      listingToDisplay = <ListingsDisplay searchType= {"/searchproperties/"+this.state.topicBox+"/"+this.state.propertyType} propertyType={this.state.propertyType}  />;
     } else {
       listingToDisplay = <ListingsDisplay searchType= '/properties' />;
     }
