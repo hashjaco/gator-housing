@@ -22,7 +22,7 @@ class ListingsDisplay extends Component {
     }
 
     updateListing(){
-      console.log(this.props.propertyType);
+      console.log(this.props.searchType);
       if (!this.props.searchType) return;
       let self = this;
         fetch(this.props.searchType, {
