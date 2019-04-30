@@ -41,7 +41,7 @@ class HeaderBar extends Component {
               <NavItem>
                 <NavLink tag={Link} to="/post">Post</NavLink>
               </NavItem>
-              <NavItem style={{paddingLeft:"0.5rem"}}>
+              <NavItem style={{paddingLeft:"0.3rem"}}>
                 <Button color="success" tag={Link} to="/login">Login</Button>
               </NavItem>
               <UncontrolledDropdown>
