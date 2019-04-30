@@ -1,4 +1,4 @@
-const app = require(/sfsu-housing-vp/app.js);
+const app = require('/sfsu-housing-vp/app.js');
 
 app.get('/properties', db.getProperties);
 app.get('/properties/:id', db.getPropertyById);
