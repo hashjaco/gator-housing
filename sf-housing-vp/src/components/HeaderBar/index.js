@@ -36,10 +36,13 @@ class HeaderBar extends Component {
           <Collapse isOpen={this.state.open} navbar>
             <Nav className='ml-auto' navbar>
               <NavItem>
-                <NavLink tag={Link} to="/post">Post</NavLink>
+                <NavLink tag={Link} to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/about">About</NavLink>
+                <NavLink tag={Link} to="/post">Post</NavLink>
+              </NavItem>
+              <NavItem style={{paddingLeft:"0.3rem"}}>
+                <Button color="success" tag={Link} to="/login">Login</Button>
               </NavItem>
               <UncontrolledDropdown>
                 <DropdownToggle nav caret>
@@ -49,8 +52,8 @@ class HeaderBar extends Component {
                   <DropdownItem tag={Link} to="/dashboard">
                     Dashboard
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/login">
-                    Login
+                  <DropdownItem tag={Link} to="/about">
+                    About
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

@@ -59,9 +59,9 @@ class ListingsDisplay extends Component {
       <div class="d-flex flex-column">
         {this.state.properties.map(member =>
           <ListingCard 
-            title="A House" 
+            title= {member.title} 
             type={member.property_type} 
-            src={member.image_path}
+            src=  {'./assets/' +member.image_path}
             description={member.address}
             price={member.price} />
         )}
