@@ -27,6 +27,7 @@ app.get('/searchproperties/:key/:type', db.searchProperties);
 app.post('/properties', db.createProperty);
 app.put('/properties/:id', db.updateProperty);
 app.delete('/properties/:id', db.deleteProperty);
+app.post('/users', db.addUser);
 
 app.listen(PORT);
 

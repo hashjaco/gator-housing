@@ -8,6 +8,8 @@ class Signup extends Component {
       this.state = {
       'email': '',
       'password': '',
+      'fname': '',
+      'lname' : '',
       validate: {
         emailState: '',
       },
@@ -37,7 +39,23 @@ class Signup extends Component {
 
   submitForm(e) {
     e.preventDefault();
-    console.log(`Email: ${ this.state.email }`)
+    //console.log(`Email: ${ this.state.fname }`);
+      fetch('/users', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        first_name: this.state.fname,
+        last_name: this.state.lname,
+        email: this.state.email,
+        password: this.state.password
+      })
+    })
+    .then( (response) => { 
+      alert("User Created")
+    });
   }
 
   render() {
@@ -52,10 +70,10 @@ class Signup extends Component {
           <Row>
           <Col>
             <FormGroup>
-              <Label for="examplePassword">First Name</Label>
+              <Label>First Name</Label>
               <Input
-                type="firstname"
-                name="fn"
+                type="text"
+                name="fname"
                 id="firstname"
                 placeholder="john"
                 value={ fname }
@@ -65,10 +83,10 @@ class Signup extends Component {
           </Col>
           <Col>
             <FormGroup>
-              <Label for="examplePassword">Last Name</Label>
+              <Label>Last Name</Label>
               <Input
-                type="lastname"
-                name="ln"
+                type="text"
+                name="lname"
                 id="lastname"
                 placeholder="doe"
                 value={ lname }

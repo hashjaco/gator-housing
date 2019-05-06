@@ -135,13 +135,12 @@ const getUserById = (req, res) => {
 };
 
 const addUser = (req, res) => {
-    const { type, price, image_path } = req.body;
-
-    pool.query ('INSERT INTO users (User_type, price, image_path) VALUES ($1, $2, $3)', [type, price, image_path], (error, results) => {
+    const { email, password, first_name, last_name } = req.body;
+    pool.query (`INSERT INTO users (email_address, password, first_name, last_name, isadmin) VALUES ($1, crypt($2, gen_salt('bf')), $3, $4, $5)`, [email, password, first_name, last_name, "F"], (error, results) => {
         if (error){
             throw error;
         }
-        res.status(201).send(`User added with ID: ${result.insertId}`);
+        res.status(201).send(`User added with ID: ${results.insertId}`);
     });
 };
 
@@ -203,5 +202,6 @@ module.exports = {
     createProperty,
     searchProperties,
     updateProperty,
-    deleteProperty
+    deleteProperty,
+    addUser,
 };
