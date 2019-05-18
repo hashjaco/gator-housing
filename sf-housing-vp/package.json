@@ -15,6 +15,7 @@
     "pg": "^7.9.0",
     "pg-native": "^3.0.0",
     "popper.js": "^1.14.7",
+    "prettier": "^1.17.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
@@ -22,7 +23,7 @@
     "reactstrap": "^7.1.0",
     "semver": "^6.0.0",
     "ts-pnp": "^1.0.1",
-    "typescript": "^3.4.2",
+    "typescript": "^3.4.5",
     "webpack": "^4.28.3"
   },
   "homepage": "http://sfsu-housing.appspot.com",
@@ -34,7 +35,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node app.js"
+    "server": "node app.js",
+    "prettier-watch": "onchange '*/*.js' -- prettier --write {{changed}}"
   },
   "eslintConfig": {
     "extends": "react-app"
