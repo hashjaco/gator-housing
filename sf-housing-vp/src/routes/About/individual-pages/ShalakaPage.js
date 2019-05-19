@@ -19,7 +19,7 @@ class ShalakaPage extends Component {
     {/* Replace with your name */}
     <h1 className="text-center">Shalaka Aigal</h1>
     {/* Link your picture */}
-    <img src= {shalakapic} alt="A lovely image of Shalaka" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
+    <img src= {shalakapic} alt="Shalaka" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
     {/* Briefly describe yourself */}
     <div style={{margin: 'auto', maxWidth: '25rem'}}>
       <p className="text-center">Hi my name is Shalaka. I am a Computer Science graduate student at SFSU.</p>

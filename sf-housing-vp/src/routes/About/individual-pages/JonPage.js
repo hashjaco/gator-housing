@@ -19,7 +19,7 @@ class JonPage extends Component {
     {/* Put Your Name */}
     <h1 className="text-center">Jonathan Fox</h1>
     {/* Link your picture */}
-    <img src= {jonpic} alt="A lovely image of Jonathan" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
+    <img src= {jonpic} alt="Jonathan" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
     {/* Briefly describe yourself */}
     <div style={{margin: 'auto', maxWidth: '25rem'}}>
       <p className="text-center">Hi, I'm Jonathan! I study Computer Science to build products that can help people. My main areas of interest are web and app development. </p>

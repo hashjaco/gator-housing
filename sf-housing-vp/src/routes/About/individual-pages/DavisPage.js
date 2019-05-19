@@ -17,7 +17,7 @@ class DavisPage extends Component {
             {/* Replace with your name */}
             <h1 className="text-center">Davis Hoang</h1>
             {/* Link your picture */}
-            <img alt="A lovely image of Davis" src={davispic} className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
+            <img alt="Davis" src={davispic} className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
             {/* Briefly describe yourself */}
             <div style={{margin: 'auto', maxWidth: '25rem'}}>
             <p className="text-center">Hi my name is Davis Hoang, I am currently a 5th year at SFSU</p>

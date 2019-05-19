@@ -19,7 +19,7 @@ class HashimPage extends Component {
     {/* Replace with your name */}
     <h1 className="text-center">Hashim Jacobs</h1>
     {/* Link your picture */}
-    <img src= {hashimpic} alt="A lovely image of Hashim" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
+    <img src= {hashimpic} alt="Hashim" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
     {/* Briefly describe yourself */}
     <div style={{margin: 'auto', maxWidth: '25rem'}}>
       <p className="text-center">Hi, I'm Hashim and I'm the lead backend engineer of team 14! I enjoy watching movies,
