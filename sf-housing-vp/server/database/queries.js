@@ -36,11 +36,11 @@ const getListingById = (req, res) => {
 };
 
 const createListing = (req, res) => {
-  const { type, price, image_path } = req.body;
-
+  const {  title,listingType, price, description, address, zipcode, imageURL, noOfRoom} = req.body;
   pool.query(
-    "INSERT INTO listings (listing_type, price, image_path) VALUES ($1, $2, $3)",
-    [type, price, image_path],
+    `INSERT INTO listings (title, description, address, zip_code, listing_type, price, no_of_rooms, image_path, user_id) VALUES
+     ($1, $2, $3, $4, $5, $6, $7,$8, 9)`,
+    [title, description, address, zipcode, listingType, price, noOfRoom, imageURL],
     (error, result) => {
       if (error) {
         throw error;
