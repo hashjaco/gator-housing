@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ListingsDisplay from '../../components/ListingsDisplay';
 import { Form, FormGroup, Label, Input, Button, } from 'reactstrap';
 
-
 class App extends Component {
 	constructor(props) {
     super(props);
@@ -51,10 +50,7 @@ class App extends Component {
   render() {
     return (
       // Main Div
-      <div style={{maxWidth:"60rem", margin:"auto"}}>
-
-        {/* Spacer */}
-        <div style={{height:"3rem"}}/>
+      <div style={{maxWidth:"50rem", margin:"auto", padding:"3rem"}}>
 
         {/* Title */}
         <div style={{textAlign:"center"}}>
