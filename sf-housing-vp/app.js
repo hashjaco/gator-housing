@@ -21,12 +21,12 @@ app.use('/assets/', express.static('./assets/'));
 
 
 
-app.get('/properties', db.getProperties);
-app.get('/properties/:id', db.getPropertyById);
-app.get('/searchproperties/:key/:type', db.searchProperties);
-app.post('/properties', db.createProperty);
-app.put('/properties/:id', db.updateProperty);
-app.delete('/properties/:id', db.deleteProperty);
+app.get('/properties', db.getListings);
+app.get('/properties/:id', db.getListingById);
+app.get('/searchproperties/:key/:type', db.searchListings);
+app.post('/properties', db.createListing);
+app.put('/properties/:id', db.updateListing);
+app.delete('/properties/:id', db.deleteListing);
 app.post('/users', db.addUser);
 
 app.listen(PORT);

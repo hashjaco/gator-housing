@@ -7,52 +7,52 @@ const pool = new Pool({
   port: 5432
 });
 
-/* PROPERTY QUERIES */
+/* Listing QUERIES */
 
-/* Return all properties */
-const getProperties = (req, res) => {
-  pool.query("SELECT * FROM properties ORDER BY id ASC", (error, results) => {
+/* Return all Listings */
+const getListings = (req, res) => {
+  pool.query("SELECT * FROM listings ORDER BY id ASC", (error, result) => {
     if (error) {
       throw error;
     }
-    res.status(200).json(results.rows);
+    res.status(200).json(result.rows);
   });
 };
 
-/* Return properties by id */
-const getPropertyById = (req, res) => {
+/* Return Listings by id */
+const getListingById = (req, res) => {
   const id = parseInt(req.params.id);
   console.log(id);
   pool.query(
-    "SELECT * FROM properties WHERE id = $1",
+    "SELECT * FROM listings WHERE id = $1",
     [id],
-    (error, results) => {
+    (error, result) => {
       if (error) {
         throw error;
       }
-      res.status(200).json(results.rows);
+      res.status(200).json(result.rows);
     }
   );
 };
 
-const createProperty = (req, res) => {
+const createListing = (req, res) => {
   const { type, price, image_path } = req.body;
 
   pool.query(
-    "INSERT INTO properties (property_type, price, image_path) VALUES ($1, $2, $3)",
+    "INSERT INTO listings (listing_type, price, image_path) VALUES ($1, $2, $3)",
     [type, price, image_path],
-    (error, results) => {
+    (error, result) => {
       if (error) {
         throw error;
       }
-      res.status(201).send(`Property added with ID: ${result.insertId}`);
+      res.status(201).send(`Listing added with ID: ${result.insertId}`);
     }
   );
 };
 
-const searchProperties = (req, res) => {
+const searchListings = (req, res) => {
   const searchText = req.params.key;
-  const propertyType = req.params.type;
+  const listingType = req.params.type;
   let search;
   if (searchText === "default") {
     search = "%%";
@@ -60,20 +60,20 @@ const searchProperties = (req, res) => {
     search = "%" + req.params.key + "%";
   }
 
-  if (propertyType !== "Any") {
+  if (listingType !== "Any") {
     console.log("1st DB here", req.params.key, req.params.type);
     const searchArray = search.split(" ");
     searchArray.forEach(string => {
       pool.query(
-        `SELECT * FROM properties
-            WHERE address || ' ' || property_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)
-            AND property_type = ($2)`,
-        [search, propertyType],
-        (error, results) => {
+        `SELECT * FROM listings
+            WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)
+            AND listing_type = ($2)`,
+        [search, listingType],
+        (error, result) => {
           if (error) {
             throw error;
           }
-          res.status(200).json(results.rows);
+          res.status(200).json(result.rows);
         }
       );
     });
@@ -82,8 +82,8 @@ const searchProperties = (req, res) => {
     const searchArray = search.split(" ");
     searchArray.forEach(string => {
       pool.query(
-        `SELECT * FROM properties
-            WHERE address || ' ' || property_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)`,
+        `SELECT * FROM listings
+            WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)`,
         [search],
         (error, results) => {
           if (error) {
@@ -96,37 +96,37 @@ const searchProperties = (req, res) => {
   }
 };
 
-const updateProperty = (req, res) => {
-  const id = parseInt(req.params.properties_id);
-  const { type, price, image_path } = req.body;
+const updateListing = (req, res) => {
+  const id = parseInt(req.params.id);
+  const { listing_type, price, image_path } = req.body;
 
   pool.query(
-    "UPDATE properties SET type = $1, price = $2 WHERE id = $3",
+    "UPDATE listings SET listing_type = $1, price = $2 WHERE id = $3",
     [type, price, id],
     (error, res) => {
       if (error) {
         throw error;
       }
-      res.status(200).send(`Property modified with ID: ${id}`);
+      res.status(200).send(`Listing modified with ID: ${id}`);
     }
   );
 };
 
-const deleteProperty = (req, res) => {
-  const id = parseInt(req.params.property_id);
+const deleteListing = (req, res) => {
+  const id = parseInt(req.params.id);
 
-  pool.query("DELETE FROM properties WHERE id = $1", [id], (error, results) => {
+  pool.query("DELETE FROM listings WHERE id = $1", [id], (error) => {
     if (error) {
       throw error;
     }
-    res.status(200).send(`Property deleted with ID: ${id}`);
+    res.status(200).send(`Listing deleted with ID: ${id}`);
   });
 };
 
 /* USERS QUERIES */
 
 /* Return all users */
-const getAllUsers = (req, res) => {
+const getUsers = (req, res) => {
   pool.query("SELECT * FROM users ORDER BY id ASC", (error, results) => {
     if (error) {
       throw error;
@@ -177,23 +177,8 @@ const searchUsers = (req, res) => {
   );
 };
 
-const searchUsersByListings = (req, res) => {
-  const type = parseInt(req.params.User_type);
-
-  pool.query(
-    "SELECT * FROM users WHERE User_type = $1",
-    [t],
-    (error, results) => {
-      if (error) {
-        throw error;
-      }
-      res.status(200).json(results.rows);
-    }
-  );
-};
-
 const updateUser = (req, res) => {
-  const id = parseInt(req.params.users_id);
+  const id = parseInt(req.params.id);
   const { type, price, image_path } = req.body;
 
   pool.query(
@@ -209,7 +194,7 @@ const updateUser = (req, res) => {
 };
 
 const deleteUser = (req, res) => {
-  const id = parseInt(req.params.User_id);
+  const id = parseInt(req.params.id);
 
   pool.query("DELETE FROM users WHERE id = $1", [id], (error, results) => {
     if (error) {
@@ -220,11 +205,15 @@ const deleteUser = (req, res) => {
 };
 
 module.exports = {
-  getProperties,
-  getPropertyById,
-  createProperty,
-  searchProperties,
-  updateProperty,
-  deleteProperty,
-  addUser
+  getListings,
+  getListingById,
+  createListing,
+  searchListings,
+  updateListing,
+  deleteListing,
+  addUser,
+  getUsers,
+  getUserById,
+  updateUser,
+  deleteUser
 };
