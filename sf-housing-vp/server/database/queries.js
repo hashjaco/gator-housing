@@ -11,7 +11,7 @@ const pool = new Pool({
 
 /* Return all Listings */
 const getListings = (req, res) => {
-  pool.query("SELECT * FROM listings ORDER BY id ASC", (error, result) => {
+  pool.query("SELECT * FROM listings WHERE approved='true' ORDER BY id ASC", (error, result) => {
     if (error) {
       throw error;
     }
@@ -67,7 +67,7 @@ const searchListings = (req, res) => {
       pool.query(
         `SELECT * FROM listings
             WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)
-            AND listing_type = ($2)`,
+            AND listing_type = ($2) AND approved='true'`,
         [search, listingType],
         (error, result) => {
           if (error) {
@@ -83,7 +83,7 @@ const searchListings = (req, res) => {
     searchArray.forEach(string => {
       pool.query(
         `SELECT * FROM listings
-            WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)`,
+            WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price  ILIKE  ($1) AND approved='true'`,
         [search],
         (error, results) => {
           if (error) {
