@@ -120,6 +120,7 @@ class Signup extends Component {
             </FormGroup>
           </Col>
           <Row>
+            <Col>
           <Col>
             <FormGroup>
               <Label for="examplePassword">Password</Label>
@@ -145,6 +146,7 @@ class Signup extends Component {
                 onChange={ (e) => this.handleChange(e) }
             />
             </FormGroup>
+          </Col>
           </Col>
           </Row>
           <Container>
