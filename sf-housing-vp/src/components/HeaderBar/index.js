@@ -47,28 +47,29 @@ class HeaderBar extends Component {
   render() {
     return (
       <>
-        <Navbar color="white" expand="sm" fixed={'top'} style={headerbarStyle} light>
+        <Navbar color="white" expand="md" fixed={'top'} style={headerbarStyle} light>
 
           {/* Logo */}
           <NavbarBrand href='/'><span role='img' aria-label="gator">🐊</span>GatorHouse</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
 
+          {/* Search Bar */}
+          <Form onSubmit={e => this.handleSubmit(e)} style={{marginRight:'0.5rem'}}>
+            <InputGroup>
+              <Input 
+                name="search" 
+                placeholder="Search" 
+                onChange={e => this.setState({ searchQuery: e.target.value })}
+              />
+              <InputGroupAddon addonType="append">
+                <Button color='success'><FaSearch/></Button>
+              </InputGroupAddon>
+            </InputGroup>
+          </Form>
+
+          <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             {/* Other Buttons */}
             <Nav className="mr-auto d-flex align-items-center" navbar>
-              {/* Search Bar */}
-              <Form onSubmit={e => this.handleSubmit(e)} style={{marginRight:'0.5rem'}}>
-                <InputGroup>
-                  <Input 
-                    name="search" 
-                    placeholder="Search" 
-                    onChange={e => this.setState({ searchQuery: e.target.value })}
-                  />
-                  <InputGroupAddon addonType="append">
-                    <Button color='success'><FaSearch/></Button>
-                  </InputGroupAddon>
-                </InputGroup>
-              </Form>
               <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem>

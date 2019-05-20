@@ -23,9 +23,7 @@ class AboutHome extends Component {
           <style dangerouslySetInnerHTML={{__html: "\n\t\t.card {\n\t\t\twidth: 15rem;\n\t\t\tmargin: 1rem;\n\t\t}\n\t\t@media only screen and (max-width: 600px) {\n\t\t  .card {\n\t\t\t\twidth: 12rem;\n\t\t\t\tmargin: 1rem;\n\t\t\t}\n\t\t}\n\t\t#profile {\n\t\t\theight: 198px;\n\t\t\twidth: 198px;\n\t\t}\n\t" }} />
           <div className="container-fluid" style={{margin: '2rem 0'}}>
             <h1 className="text-center">Software Engineering class SFSU</h1>
-            <h2 className="text-center">Spring 2019</h2>
-            <h2 className="text-center">Section 2</h2>
-            <h2 className="text-center">Team 14</h2>
+            <h2 className="text-center">Spring 2019 • Section 2 • Team 14</h2>
             
             {/* Individual Cards */}
             

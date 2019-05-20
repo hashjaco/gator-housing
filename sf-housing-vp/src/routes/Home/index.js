@@ -4,9 +4,9 @@ import { Form, FormGroup, Label, Input, Button, } from 'reactstrap';
 
 
 const mainDivStyle = {
-  maxWidth:"50rem", 
+  maxWidth:"65rem", 
   margin:"auto", 
-  padding:"0 3rem"
+  padding:"0 2rem"
 }
 
 

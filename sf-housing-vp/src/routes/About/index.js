@@ -11,9 +11,9 @@ import JarrettPage from './individual-pages/JarrettPage'
 import ShalakaPage from './individual-pages/ShalakaPage'
 
 const mainDivStyle = {
-  maxWidth:"50rem", 
+  maxWidth:"80rem", 
   margin:"auto", 
-  padding:"0 3rem"
+  padding:"0 2rem"
 }
 
 class About extends Component {
