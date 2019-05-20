@@ -66,7 +66,9 @@ class ListingsDisplay extends Component {
               type={member.property_type} 
               src=  {'./assets/' +member.image_path}
               description={member.address}
-              price={member.price} />
+              price={member.price} 
+              id={member.id}
+              recipientId={member.user_id}/>
           )}
         </div>
       </>
