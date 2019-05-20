@@ -46,6 +46,7 @@ class ListingCard extends Component {
     }
     this.toggle = this.toggle.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.formRef = React.createRef();
 
   }
   toggle(){
@@ -69,6 +70,7 @@ class ListingCard extends Component {
 
   handleSendMessage(event, values) {
     event.preventDefault();
+   // this.formReset();
     fetch('/messages', {
       method: 'POST',
       headers: {
@@ -83,9 +85,15 @@ class ListingCard extends Component {
     })
     .then( (response) => { 
       alert("Message Sent");
-      this.setState({message :''})
+      this.formReset();
     });
   }
+
+  formReset() {
+    this.formRef.current.reset()
+    }
+
+  
 
   render() {
     return (
@@ -131,7 +139,7 @@ class ListingCard extends Component {
             
           </ModalBody>
           <ModalFooter>
-            <Form onSubmit={ (e) => this.handleSendMessage(e)}>
+            <Form onSubmit={ (e) => this.handleSendMessage(e)} innerRef={this.formRef}>
             <Input ref={(ref) => { this.uploadInput = ref; }} type='textarea' name='message' placeholder='Message to the landlord' 
                 onChange={ (e) => this.handleChange(e)}  />
                 <br />
