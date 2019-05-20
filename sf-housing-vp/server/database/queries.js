@@ -11,7 +11,7 @@ const pool = new Pool({
 
 /* Return all Listings */
 const getListings = (req, res) => {
-  pool.query("SELECT * FROM listings ORDER BY id ASC", (error, result) => {
+  pool.query("SELECT * FROM listings WHERE approved='true' ORDER BY id ASC", (error, result) => {
     if (error) {
       throw error;
     }
@@ -36,11 +36,11 @@ const getListingById = (req, res) => {
 };
 
 const createListing = (req, res) => {
-  const { type, price, image_path } = req.body;
-
+  const {  title,listingType, price, description, address, zipcode, imageURL, noOfRoom} = req.body;
   pool.query(
-    "INSERT INTO listings (listing_type, price, image_path) VALUES ($1, $2, $3)",
-    [type, price, image_path],
+    `INSERT INTO listings (title, description, address, zip_code, listing_type, price, no_of_rooms, image_path, user_id) VALUES
+     ($1, $2, $3, $4, $5, $6, $7,$8, 9)`,
+    [title, description, address, zipcode, listingType, price, noOfRoom, imageURL],
     (error, result) => {
       if (error) {
         throw error;
@@ -67,7 +67,7 @@ const searchListings = (req, res) => {
       pool.query(
         `SELECT * FROM listings
             WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)
-            AND listing_type = ($2)`,
+            AND listing_type = ($2) AND approved='true'`,
         [search, listingType],
         (error, result) => {
           if (error) {
@@ -83,7 +83,7 @@ const searchListings = (req, res) => {
     searchArray.forEach(string => {
       pool.query(
         `SELECT * FROM listings
-            WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)`,
+            WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price  ILIKE  ($1) AND approved='true'`,
         [search],
         (error, results) => {
           if (error) {

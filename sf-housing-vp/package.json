@@ -24,7 +24,8 @@
     "semver": "^6.0.0",
     "ts-pnp": "^1.0.1",
     "typescript": "^3.4.5",
-    "webpack": "^4.28.3"
+    "webpack": "^4.28.3",
+    "express-fileupload": "^1.1.1"
   },
   "homepage": "http://sfsu-housing.appspot.com",
   "engines": {
