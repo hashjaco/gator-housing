@@ -9,6 +9,7 @@
     "bootstrap": "^4.3.1",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
+    "express-fileupload": "^1.1.1",
     "google-map-react": "^1.1.4",
     "jquery": "^1.9.1",
     "path": "^0.12.7",
@@ -18,14 +19,14 @@
     "prettier": "^1.17.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "reactstrap": "^7.1.0",
     "semver": "^6.0.0",
     "ts-pnp": "^1.0.1",
     "typescript": "^3.4.5",
-    "webpack": "^4.28.3",
-    "express-fileupload": "^1.1.1"
+    "webpack": "^4.28.3"
   },
   "homepage": "http://sfsu-housing.appspot.com",
   "engines": {
