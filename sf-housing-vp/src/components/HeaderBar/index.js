@@ -76,6 +76,9 @@ class HeaderBar extends Component {
                 <NavLink href="#about">About</NavLink>
               </NavItem>
               <NavItem>
+                <NavLink href="#post">Post</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href="#dashboard">Dashboard</NavLink>
               </NavItem>
               <NavItem>
