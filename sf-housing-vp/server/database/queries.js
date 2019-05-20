@@ -224,7 +224,7 @@ const addMessages = (req, res) => {
 const getMessagesById = (req, res) => {
   const id = parseInt(req.params.id);
   pool.query(
-    "SELECT * FROM messages WHERE recipient = $1",
+    "SELECT * FROM messages m INNER JOIN users u ON m.user_id = u.user_id WHERE m.recipient = $1",
     [id],
     (error, result) => {
       if (error) {
