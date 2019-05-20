@@ -45,7 +45,7 @@ class Login extends Component {
     const { email, password } = this.state;
     return (
       <Container className="App">
-      <br></br><br></br><br></br><br></br>
+        <div style={{height:"3rem"}} /> 
         <h2>Log In</h2>
         <br></br>
         <Form className="form" onSubmit={ (e) => this.submitForm(e) }>

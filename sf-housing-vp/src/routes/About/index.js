@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 import AboutHome from './AboutHome'
 import DavisPage from './individual-pages/DavisPage'
@@ -10,22 +10,27 @@ import HashimPage from './individual-pages/HashimPage'
 import JarrettPage from './individual-pages/JarrettPage'
 import ShalakaPage from './individual-pages/ShalakaPage'
 
+const mainDivStyle = {
+  maxWidth:"50rem", 
+  margin:"auto", 
+  padding:"0 3rem"
+}
 
 class About extends Component {
   render() {
     return (
-      <div style={{marginTop:"2rem"}}>
+      <div style={mainDivStyle}>
 
-          <BrowserRouter>
-            <Route exact path='/about/' component={AboutHome} />
-            <Route exact path='/about/davis-page' component={DavisPage} />
-            <Route exact path='/about/jon-page' component={JonPage} />
-            <Route exact path='/about/eric-page' component={EricPage} />
-            <Route exact path ='/about/kevin-page' component={KevinPage}/>
-            <Route exact path ='/about/hashim-page' component={HashimPage}/>
-            <Route exact path ='/about/jarrett-page' component={JarrettPage}/>
-            <Route exact path ='/about/shalaka-page' component={ShalakaPage}/>
-          </BrowserRouter>
+        <HashRouter>
+          <Route exact path='/about/' component={AboutHome} />
+          <Route exact path='/about/davis-page' component={DavisPage} />
+          <Route exact path='/about/jon-page' component={JonPage} />
+          <Route exact path='/about/eric-page' component={EricPage} />
+          <Route exact path ='/about/kevin-page' component={KevinPage}/>
+          <Route exact path ='/about/hashim-page' component={HashimPage}/>
+          <Route exact path ='/about/jarrett-page' component={JarrettPage}/>
+          <Route exact path ='/about/shalaka-page' component={ShalakaPage}/>
+        </HashRouter>
 
       </div>
     )

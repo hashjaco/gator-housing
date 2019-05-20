@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ListingCard from "./ListingCard";
+import { Alert } from "reactstrap";
 
 class ListingsDisplay extends Component {
 	constructor(props) {
@@ -51,21 +52,24 @@ class ListingsDisplay extends Component {
 
     if (this.state.properties.length === 0) {
       return(
-        <div>No results found.</div>
+        <Alert color="danger">No results found.</Alert>
       )
     }
 
     return (
-      <div class="d-flex flex-column">
-        {this.state.properties.map(member =>
-          <ListingCard 
-            title= {member.title} 
-            type={member.property_type} 
-            src=  {'./assets/' +member.image_path}
-            description={member.address}
-            price={member.price} />
-        )}
-      </div>
+      <>
+        <h5>Displaying {this.state.properties.length} result(s).</h5>
+        <div class="d-flex flex-column">
+          {this.state.properties.map(member =>
+            <ListingCard 
+              title= {member.title} 
+              type={member.property_type} 
+              src=  {'./assets/' +member.image_path}
+              description={member.address}
+              price={member.price} />
+          )}
+        </div>
+      </>
     )
   }
 
