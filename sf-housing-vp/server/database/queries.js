@@ -204,6 +204,37 @@ const deleteUser = (req, res) => {
   });
 };
 
+
+const addMessages = (req, res) => {
+  const {  message,listingId, recipientId } = req.body;
+  pool.query(
+    `INSERT INTO messages (user_id, recipient, message, listing) VALUES
+     ($1, $2, $3, $4)`,
+    [10, recipientId, message, listingId],
+    (error, result) => {
+      if (error) {
+        throw error;
+      }
+      res.status(201).send(`Listing added with ID: ${result.insertId}`);
+    }
+  );
+};
+
+/* Return Messages for a particular Recipient */
+const getMessagesById = (req, res) => {
+  const id = parseInt(req.params.id);
+  pool.query(
+    "SELECT * FROM messages WHERE recipient = $1",
+    [id],
+    (error, result) => {
+      if (error) {
+        throw error;
+      }
+      res.status(200).json(result.rows);
+    }
+  );
+};
+
 module.exports = {
   getListings,
   getListingById,
@@ -215,5 +246,7 @@ module.exports = {
   getUsers,
   getUserById,
   updateUser,
-  deleteUser
+  deleteUser,
+  addMessages,
+  getMessagesById,
 };

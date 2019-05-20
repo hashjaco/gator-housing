@@ -1,8 +1,9 @@
 import './index.css'
 import React, { Component, } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
+import { Input, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form} from 'reactstrap';
 import GoogleMapReact from 'google-map-react';
+import { AvForm, AvField, AvInput, } from 'availity-reactstrap-validation';
 
 
 const MAPS_API_KEY = "AIzaSyBllbHD-lG5no2m1IFdtdckhDETM4n4dw4"
@@ -40,9 +41,12 @@ class ListingCard extends Component {
     super(props);
     this.state = {
       modal: false,
+      message:'',
       ...props
     }
     this.toggle = this.toggle.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+
   }
   toggle(){
     this.setState((prevState) => {
@@ -52,6 +56,35 @@ class ListingCard extends Component {
 
   toPriceString = (number) => {
     return "$" + number.toLocaleString(undefined, {maximumFractionDigits:2, minimumFractionDigits:2});
+  }
+
+  handleChange = async (event) => {
+    const { target } = event;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const { name } = target;
+    await this.setState({
+      [ name ]: value,
+    });
+  }
+
+  handleSendMessage(event, values) {
+    event.preventDefault();
+    fetch('/messages', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        listingId: this.props.id,
+        message: this.state.message,
+        recipientId: this.props.recipientId,
+      })
+    })
+    .then( (response) => { 
+      alert("Message Sent");
+      this.setState({message :''})
+    });
   }
 
   render() {
@@ -98,8 +131,14 @@ class ListingCard extends Component {
             
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Message Landlord</Button>{' '}
+            <Form onSubmit={ (e) => this.handleSendMessage(e)}>
+            <Input ref={(ref) => { this.uploadInput = ref; }} type='textarea' name='message' placeholder='Message to the landlord' 
+                onChange={ (e) => this.handleChange(e)}  />
+                <br />
+            <Button color="primary">Message Landlord</Button>{' '}
             <Button color="secondary" onClick={this.toggle}>Back to Listings</Button>
+            </Form>
+          
           </ModalFooter>
         </Modal>
 
