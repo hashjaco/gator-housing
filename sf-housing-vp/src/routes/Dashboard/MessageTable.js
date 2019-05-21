@@ -1,43 +1,67 @@
 import React, { Component } from 'react';
-import { Table } from 'reactable'
+import { Table } from 'reactable';
+import { Alert } from "reactstrap";
+
 
 class MessageTable extends Component {
   
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      data: [
-        {
-          Name: 'Jonathan',
-          Date: 'May 2, 2019',
-          Message: 'Property Question',
-        },
-        {
-          Date: 'May 2,2019',
-          Name: 'Kevin',
-          Message: 'Rent Question',
-        },
-        {
-          Date: 'May 2,2019',
-          Message: 'How far away from campus?',
-          Name: 'Davis',
-        },
-        {
-          Date: 'May 1,2019',
-          Message: 'Public Transporation Question',
-          Name: 'Hashim',
-        },
-      ],
+        messages: []
     }
-  }
+    this.updateListing = this.updateListing.bind(this);
+}
 
-  render() {
+componentDidMount() {
+    this.updateListing();
+}
+
+componentDidUpdate(prevProps){
+  if((JSON.stringify(this.props.searchType) !== JSON.stringify(prevProps.searchType)) || (JSON.stringify(this.props.propertyType) !== JSON.stringify(prevProps.propertyType)))
+  {
+        this.updateListing();
+  }
+}
+
+updateListing(){
+  //if (!this.props.searchType) return;
+  let self = this;
+    fetch('/messages/9', {
+        method: 'GET'
+    }).then(function(response) {
+        if (response.status >= 400) {
+            throw new Error("Bad response from server");
+        }
+        return response.json();
+    }).then(function(data) {
+        self.setState({messages: data});
+    }).catch(err => {
+    console.log('caught it!',err);
+    })
+}
+
+
+
+render() {
+
+if (!this.state.messages) {
+  return(
+    <div>No messages recieved!</div>
+  )
+}
+
+if (this.state.messages.length === 0) {
+  return(
+    <Alert color="danger">No messages recieved.</Alert>
+  )
+}
     return (
       <>
-        <Table className="table" data={this.state.data} />
+        <Table className="table" data={this.state.messages} />
       </>
     )
   }
 }
   
-export default MessageTable
+export default MessageTable;

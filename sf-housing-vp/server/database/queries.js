@@ -66,7 +66,7 @@ const searchListings = (req, res) => {
     searchArray.forEach(string => {
       pool.query(
         `SELECT * FROM listings
-            WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price  ILIKE  ($1)
+            WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price || ' ' || title ILIKE  ($1)
             AND listing_type = ($2) AND approved='true'`,
         [search, listingType],
         (error, result) => {
@@ -83,7 +83,7 @@ const searchListings = (req, res) => {
     searchArray.forEach(string => {
       pool.query(
         `SELECT * FROM listings
-            WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price  ILIKE  ($1) AND approved='true'`,
+            WHERE address || ' ' || listing_type || ' ' || zip_code || ' ' || price || ' ' || title ILIKE  ($1) AND approved='true'`,
         [search],
         (error, results) => {
           if (error) {
@@ -210,7 +210,7 @@ const addMessages = (req, res) => {
   pool.query(
     `INSERT INTO messages (user_id, recipient, message, listing) VALUES
      ($1, $2, $3, $4)`,
-    [10, recipientId, message, listingId],
+    [13, recipientId, message, listingId],
     (error, result) => {
       if (error) {
         throw error;
@@ -224,7 +224,7 @@ const addMessages = (req, res) => {
 const getMessagesById = (req, res) => {
   const id = parseInt(req.params.id);
   pool.query(
-    "SELECT * FROM messages m INNER JOIN users u ON m.user_id = u.user_id WHERE m.recipient = $1",
+    "SELECT l.title as ListingTitle, m.message as Message, u.first_name as FirstName, u.last_name as LastName, u.email_address as Email, m.message_time as MessagedOn FROM users u INNER JOIN messages m ON u.user_id = m.user_id INNER JOIN listings l ON m.listing = l.id where recipient= $1",
     [id],
     (error, result) => {
       if (error) {

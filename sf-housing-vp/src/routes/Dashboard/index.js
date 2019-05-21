@@ -6,7 +6,7 @@ import MessageTable from "./MessageTable.js";
 import Profile from './Profile.js';
 
 const mainDivStyle = {
-  maxWidth:"65rem", 
+  maxWidth:"85rem", 
   margin:"auto", 
   padding:"1rem 2rem",
   backgroundColor:'var(--white)',
