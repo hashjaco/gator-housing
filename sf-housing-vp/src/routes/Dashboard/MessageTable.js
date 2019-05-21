@@ -13,7 +13,6 @@ class MessageTable extends Component {
   }
 
   convertToDateString(timestamp) {
-    console.log('timestamp: ' + timestamp);
     // Split off date part of timestamp
     timestamp = timestamp.split('T')[0];
     return timestamp;
