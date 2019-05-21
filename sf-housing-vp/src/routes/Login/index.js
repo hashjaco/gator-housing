@@ -14,6 +14,8 @@ class Login extends Component {
       },
     }
     this.handleChange = this.handleChange.bind(this);
+    this.formRef = React.createRef();
+
   }
 
   validateEmail(e) {
@@ -36,9 +38,37 @@ class Login extends Component {
     });
   }
 
+  formReset() {
+    this.formRef.current.reset()
+    }
+
   submitForm(e) {
     e.preventDefault();
-    console.log(`Email: ${ this.state.email }`)
+      fetch('/login', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        email: this.state.email,
+        password: this.state.password
+      })
+    })
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(response) {
+      if(response.length > 0){
+        alert("Welcome " + response[0].first_name);
+        console.log(response[0].user_id);
+        this.formReset();
+      }
+        else{
+          alert("Try again!");
+          this.formReset();
+        }
+    });
   }
 
   render() {
@@ -48,7 +78,7 @@ class Login extends Component {
         <div style={{height:"3rem"}} /> 
         <h2>Log In</h2>
         <br></br>
-        <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
+        <Form className="form" onSubmit={ (e) => this.submitForm(e) } innerRef={this.formRef}>
           <Col>
             <FormGroup>
               <Label>Username</Label>

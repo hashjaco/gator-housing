@@ -119,6 +119,7 @@ const deleteListing = (req, res) => {
     if (error) {
       throw error;
     }
+    console.log(res);
     res.status(200).send(`Listing deleted with ID: ${id}`);
   });
 };
@@ -143,6 +144,19 @@ const getUserById = (req, res) => {
     if (error) {
       throw error;
     }
+    res.status(200).json(results.rows);
+  });
+};
+
+const authenticateUser = (req, res) => {
+  const { email, password,  } = req.body;
+  pool.query(`SELECT * FROM users WHERE email_address = $1 AND password = crypt($2, password)`, [email, password], (error, results) => {
+    if (error) {
+      throw error;
+    }
+    else if(results.rows <= 0)
+      res.status(401).json(results.rows);
+    else
     res.status(200).json(results.rows);
   });
 };
@@ -247,6 +261,7 @@ module.exports = {
   getUserById,
   updateUser,
   deleteUser,
+  authenticateUser,
   addMessages,
   getMessagesById,
 };

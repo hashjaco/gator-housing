@@ -45,6 +45,8 @@ app.delete('/properties/:id', db.deleteListing);
 app.post('/users', db.addUser);
 app.post('/messages', db.addMessages);
 app.get('/messages/:id', db.getMessagesById);
+app.post('/login', db.authenticateUser);
+
 
 app.listen(PORT);
 
