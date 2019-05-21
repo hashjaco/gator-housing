@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Input, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form} from 'reactstrap';
 import GoogleMapReact from 'google-map-react';
 import { AvForm, AvField, AvInput, } from 'availity-reactstrap-validation';
+import geolib from 'geolib'
 
 
 const MAPS_API_KEY = "AIzaSyBllbHD-lG5no2m1IFdtdckhDETM4n4dw4"
@@ -39,16 +40,31 @@ class ListingCard extends Component {
 
   constructor(props){ 
     super(props);
+
+    var lat = this.props.center.lat + (Math.random()-0.5)*0.01
+    var lng = this.props.center.lng + (Math.random()-0.5)*0.01
+    var distance = geolib.getDistance(
+      {latitude: props.center.lat, longitude: props.center.lng},
+      {latitude: lat, longitude: lng}
+    );
+    distance = (distance/1609.344).toFixed(1); // Convert to miles and round to 1 decimal
+
     this.state = {
+      ...props,
       modal: false,
       message:'',
-      ...props
+      center: {
+        lat: lat,
+        lng: lng,
+      },
+      distance: distance,
     }
     this.toggle = this.toggle.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.formRef = React.createRef();
 
   }
+
   toggle(){
     this.setState((prevState) => {
       return {modal: !prevState.modal}
@@ -124,15 +140,15 @@ class ListingCard extends Component {
             <img src={this.props.src} alt={this.props.title} style={{width:"100%", height:"16rem", objectFit:"cover"}}/>
             <p> {this.state.description} </p>
             <p> {this.toPriceString(this.state.price)} / month</p>
-            {/* Map */}
+            {/* Google Map */}
             <div style={{height:'16rem', width:'100%'}}>
               <GoogleMapReact
                 bootstrapURLKeys={{key: MAPS_API_KEY}}
-                defaultCenter={this.props.center}
+                defaultCenter={this.state.center}
                 defaultZoom={this.props.zoom} >
                 <MapLabel
-                  lat={this.props.center.lat}
-                  lng={this.props.center.lng} 
+                  lat={this.state.center.lat}
+                  lng={this.state.center.lng} 
                   text="" />
               </GoogleMapReact>
             </div>

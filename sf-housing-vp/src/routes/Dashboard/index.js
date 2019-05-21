@@ -5,6 +5,7 @@ import { HashRouter, Route, Link } from 'react-router-dom';
 import MessageTable from "./MessageTable.js";
 import Profile from './Profile.js';
 
+// Styles
 const mainDivStyle = {
   maxWidth:"85rem", 
   margin:"auto", 

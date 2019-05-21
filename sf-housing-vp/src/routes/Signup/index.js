@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import {Container, Col, Form,FormGroup, Label, Input,Button, FormText, FormFeedback,Row} from 'reactstrap';
 
 
@@ -149,6 +150,18 @@ class Signup extends Component {
           </Col>
           </Col>
           </Row>
+
+          <Col>
+          <FormGroup check>
+            <Label check>
+              <Input type='checkbox' />{' '}
+              I agree to the <Link href="/">terms and services</Link>
+            </Label>
+          </FormGroup>
+          </Col>
+          
+          <br/>
+
           <Container>
             <Row>
               <Col><Button color="primary">submit</Button></Col>

@@ -6,7 +6,7 @@ class ListingsDisplay extends Component {
 	constructor(props) {
         super(props)
         this.state = {
-            properties: []
+            properties: null,
         }
         this.updateListing = this.updateListing.bind(this);
     }
@@ -23,7 +23,6 @@ class ListingsDisplay extends Component {
     }
 
     updateListing(){
-      console.log(this.props.searchType);
       if (!this.props.searchType) return;
       let self = this;
         fetch(this.props.searchType, {
@@ -46,7 +45,7 @@ class ListingsDisplay extends Component {
 
     if (!this.state.properties) {
       return(
-        <div>Properties does not exist!</div>
+        <h5>Loading...</h5>
       )
     }
 
@@ -59,7 +58,7 @@ class ListingsDisplay extends Component {
     return (
       <>
         <h5>Displaying {this.state.properties.length} result(s).</h5>
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-wrap justify-content-between">
           {this.state.properties.map(member =>
             <ListingCard 
               title= {member.title} 

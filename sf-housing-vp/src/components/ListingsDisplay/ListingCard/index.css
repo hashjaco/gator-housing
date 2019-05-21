@@ -3,8 +3,9 @@
   height: 8rem;
   background-color: var(--white);
   color: var(--dark);
-  border: 0.5px solid #cccccc;
+  border: 0.5px solid #d0d0d0;
   border-radius: 0.5rem;
+  width: 49%;
 }
 
 .listingcard:hover {

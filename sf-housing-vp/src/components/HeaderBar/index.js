@@ -13,8 +13,8 @@ const headerbarStyle = {
 }
 
 /**
- * The HeaderBar is placed at the top of every page. It contains
- * a search bar and links to other pages.
+ * The HeaderBar is located at the top of every page. 
+ * It contains a search bar and links to other pages.
  */
 class HeaderBar extends Component {
 
@@ -68,7 +68,7 @@ class HeaderBar extends Component {
 
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            {/* Other Buttons */}
+            {/* Left Buttons */}
             <Nav className="mr-auto d-flex align-items-center" navbar>
               <NavItem>
                 <NavLink href="/">Home</NavLink>
@@ -80,8 +80,11 @@ class HeaderBar extends Component {
                 <NavLink href="#post">Post</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#dashboard">Dashboard</NavLink>
+                <NavLink href="#dashboard/messages">Dashboard</NavLink>
               </NavItem>
+            </Nav>
+            {/* Right Buttons */}
+            <Nav className="ml-auto d-flex align-items-center" navbar>
               <NavItem>
                 <NavLink href="#login">Login</NavLink>
               </NavItem>

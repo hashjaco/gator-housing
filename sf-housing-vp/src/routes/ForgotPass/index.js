@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom'
-import { Container, Col, Form,FormGroup, Label, Input,Button, FormText, FormFeedback, Row } from 'reactstrap';
+import {Link} from 'react-router-dom'
+import {Container, Col, Form,FormGroup, Label, Input,Button, FormText, FormFeedback,Row} from 'reactstrap';
 
 
-class Login extends Component {
+class ForgotPass extends Component {
   constructor(props) {
     super(props);
       this.state = {
@@ -46,7 +46,7 @@ class Login extends Component {
     return (
       <Container className="App">
         <div style={{height:"3rem"}} /> 
-        <h2>Log In</h2>
+        <h2>Forgot Password?</h2>
         <br></br>
         <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
           <Col>
@@ -71,33 +71,17 @@ class Login extends Component {
               <FormFeedback>
                Invalid Email
               </FormFeedback>
-              <FormText>Your username is most likely your email.</FormText>
-            </FormGroup>
-          </Col>
-          <Col>
-            <FormGroup>
-              <Label for="examplePassword">Password</Label>
-              <Input
-                type="password"
-                name="password"
-                id="examplePassword"
-                placeholder="********"
-                value={ password }
-                onChange={ (e) => this.handleChange(e) }
-              />
-              <FormText><NavLink href="#forgotPass">Forgot password?</NavLink></FormText>
             </FormGroup>
           </Col>
           <Container>
             <Row>
-              <Col><Button color="success">Login</Button></Col>
-              <Col><Button color="primary" tag={Link} to="/signup">Sign Up</Button></Col>
+              <Col><Button color="primary" tag={Link} to="/signup">Submit</Button></Col>
             </Row>
           </Container>
-      </Form>
+        </Form>
       </Container>
     );
   }
 }
 
-export default Login;
+export default ForgotPass;
