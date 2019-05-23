@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import {Container, Col, Form,FormGroup, Label, Input,Button, FormText, FormFeedback,Row} from 'reactstrap';
 
 
@@ -62,7 +63,7 @@ class Signup extends Component {
     const { email, password ,conpassword, fname,lname } = this.state;
     return (
       <Container className="App">
-      <br></br><br></br><br></br><br></br>
+        <div style={{height:"3rem"}} /> 
         <h2>Sign ups</h2>
         <br></br>
         <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
@@ -120,6 +121,7 @@ class Signup extends Component {
             </FormGroup>
           </Col>
           <Row>
+            <Col>
           <Col>
             <FormGroup>
               <Label for="examplePassword">Password</Label>
@@ -146,7 +148,20 @@ class Signup extends Component {
             />
             </FormGroup>
           </Col>
+          </Col>
           </Row>
+
+          <Col>
+          <FormGroup check>
+            <Label check>
+              <Input type='checkbox' />{' '}
+              I agree to the <Link href="/">terms and services</Link>
+            </Label>
+          </FormGroup>
+          </Col>
+          
+          <br/>
+
           <Container>
             <Row>
               <Col><Button color="primary">submit</Button></Col>

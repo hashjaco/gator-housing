@@ -19,7 +19,7 @@ class JarrettPage extends Component {
     {/* Replace with your name */}
     <h1 className="text-center">Jarrett Lee</h1>
     {/* Link your picture */}
-    <img src= {jarrettpic} alt="A lovely image of Jarrett" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
+    <img src= {jarrettpic} alt="Jarrett" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
     {/* Briefly describe yourself */}
     <div style={{margin: 'auto', maxWidth: '25rem'}}>
       <p className="text-center">A super senior here at SFSU, I love video games and sneakers! </p>

@@ -18,7 +18,7 @@ class EricPage extends Component {
     {/* Replace with your name */}
     <h1 className="text-center">Eric</h1>
     {/* Link your picture */}
-    <img src={ericpic} alt="A lovely image of Eric" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
+    <img src={ericpic} alt="Eric" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
     {/* Briefly describe yourself */}
     <div style={{margin: 'auto', maxWidth: '25rem'}}>
       <p className="text-center">Hi, my name is Eric Chen. I'm currently a 5th year at SFSU. Studying Computer Science and Cell/Moleuclar Biology.</p>

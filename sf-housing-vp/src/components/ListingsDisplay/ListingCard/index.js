@@ -1,8 +1,10 @@
 import './index.css'
 import React, { Component, } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
+import { Input, Button, Modal, ModalHeader, ModalBody, ModalFooter, Form} from 'reactstrap';
 import GoogleMapReact from 'google-map-react';
+import { AvForm, AvField, AvInput, } from 'availity-reactstrap-validation';
+import geolib from 'geolib'
 
 
 const MAPS_API_KEY = "AIzaSyBllbHD-lG5no2m1IFdtdckhDETM4n4dw4"
@@ -38,12 +40,31 @@ class ListingCard extends Component {
 
   constructor(props){ 
     super(props);
+
+    var lat = this.props.center.lat + (Math.random()-0.5)*0.01
+    var lng = this.props.center.lng + (Math.random()-0.5)*0.01
+    var distance = geolib.getDistance(
+      {latitude: props.center.lat, longitude: props.center.lng},
+      {latitude: lat, longitude: lng}
+    );
+    distance = (distance/1609.344).toFixed(1); // Convert to miles and round to 1 decimal
+
     this.state = {
+      ...props,
       modal: false,
-      ...props
+      message:'',
+      center: {
+        lat: lat,
+        lng: lng,
+      },
+      distance: distance,
     }
     this.toggle = this.toggle.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.formRef = React.createRef();
+
   }
+
   toggle(){
     this.setState((prevState) => {
       return {modal: !prevState.modal}
@@ -53,6 +74,42 @@ class ListingCard extends Component {
   toPriceString = (number) => {
     return "$" + number.toLocaleString(undefined, {maximumFractionDigits:2, minimumFractionDigits:2});
   }
+
+  handleChange = async (event) => {
+    const { target } = event;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const { name } = target;
+    await this.setState({
+      [ name ]: value,
+    });
+  }
+
+  handleSendMessage(event, values) {
+    event.preventDefault();
+   // this.formReset();
+    fetch('/messages', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        listingId: this.props.id,
+        message: this.state.message,
+        recipientId: this.props.recipientId,
+      })
+    })
+    .then( (response) => { 
+      alert("Message Sent");
+      this.formReset();
+    });
+  }
+
+  formReset() {
+    this.formRef.current.reset()
+    }
+
+  
 
   render() {
     return (
@@ -83,23 +140,29 @@ class ListingCard extends Component {
             <img src={this.props.src} alt={this.props.title} style={{width:"100%", height:"16rem", objectFit:"cover"}}/>
             <p> {this.state.description} </p>
             <p> {this.toPriceString(this.state.price)} / month</p>
-            {/* Map */}
+            {/* Google Map */}
             <div style={{height:'16rem', width:'100%'}}>
               <GoogleMapReact
                 bootstrapURLKeys={{key: MAPS_API_KEY}}
-                defaultCenter={this.props.center}
+                defaultCenter={this.state.center}
                 defaultZoom={this.props.zoom} >
                 <MapLabel
-                  lat={this.props.center.lat}
-                  lng={this.props.center.lng} 
+                  lat={this.state.center.lat}
+                  lng={this.state.center.lng} 
                   text="" />
               </GoogleMapReact>
             </div>
             
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Message Landlord</Button>{' '}
+            <Form onSubmit={ (e) => this.handleSendMessage(e)} innerRef={this.formRef}>
+            <Input ref={(ref) => { this.uploadInput = ref; }} type='textarea' name='message' placeholder='Message to the landlord' 
+                onChange={ (e) => this.handleChange(e)}  />
+                <br />
+            <Button color="primary">Message Landlord</Button>{' '}
             <Button color="secondary" onClick={this.toggle}>Back to Listings</Button>
+            </Form>
+          
           </ModalFooter>
         </Modal>
 

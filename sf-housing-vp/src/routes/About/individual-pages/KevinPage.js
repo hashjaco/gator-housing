@@ -19,7 +19,7 @@ class KevinPage extends Component {
     {/* Replace with your name */}
     <h1 className="text-center">Kevin</h1>
     {/* Link your picture */}
-    <img src= {kevinpic} alt="A lovely image of Kevin" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
+    <img src= {kevinpic} alt="Kevin" className="rounded mx-auto d-block" style={{width: '15rem', margin: '1rem'}} />
     {/* Briefly describe yourself */}
     <div style={{margin: 'auto', maxWidth: '25rem'}}>
       <p className="text-center">Hi, I am Kevin. When I am not working on projects, I enjoy watching a SFGiants game! </p>

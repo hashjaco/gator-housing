@@ -1,69 +1,104 @@
-import './index.css';
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavItem, NavLink, NavbarBrand, NavbarToggler, Collapse, 
-  UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem,
-  Input, InputGroup, InputGroupAddon, Button } from 'reactstrap';
+import { 
+  Navbar, NavbarBrand, NavbarToggler, 
+  Nav, NavItem, NavLink, 
+  Collapse, Form, Button,
+  Input, InputGroup, InputGroupAddon
+} from 'reactstrap';
+import { withRouter } from 'react-router-dom';
+import { FaSearch } from 'react-icons/fa';
 
+const headerbarStyle = {
+  boxShadow:"0 1px 4px 0 rgba(0,0,0,0.2)",
+}
 
-
+/**
+ * The HeaderBar is located at the top of every page. 
+ * It contains a search bar and links to other pages.
+ */
 class HeaderBar extends Component {
+
   constructor(props) {
     super(props);
-
-    this.toggleOpen = this.toggleOpen.bind(this);
+    this.toggle = this.toggle.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
-      open: false
+      searchQuery: "",
+      isOpen: false,
     };
   }
 
-  toggleOpen() {
+  // For opening the HeaderBar menu on small screens
+  toggle() {
+    console.log("togglin");
     this.setState({
       open: !this.state.open
     });
   }
 
+  handleSubmit(e) {
+    e.preventDefault();
+    // cleanQuery = this.state.searchQuery with spaces changed to +'s.
+    let cleanQuery = this.state.searchQuery;
+    cleanQuery = cleanQuery.replace(/\s+/g, '+');
+    this.props.history.push("/search/" + cleanQuery);
+  }
+
   render() {
     return (
-      <div>
-        <Navbar className='main-navbar flex-nowrap bg-white' light expand='md' fixed={'top'} >
+      <>
+        <Navbar color="white" expand="md" fixed={'top'} style={headerbarStyle} light>
 
           {/* Logo */}
-          <NavbarBrand href='/'><span role='img' aria-label="gator">🐊</span> GatorHouse</NavbarBrand>
+          <NavbarBrand href='/'><span role='img' aria-label="gator">🐊</span>GatorHouse</NavbarBrand>
 
-          {/* Link Buttons */}
-          <NavbarToggler onClick={this.toggleNavbar} />
-          <Collapse isOpen={this.state.open} navbar>
-            <Nav className='ml-auto' navbar>
+          {/* Search Bar */}
+          <Form onSubmit={e => this.handleSubmit(e)} style={{marginRight:'0.5rem'}}>
+            <InputGroup>
+              <Input 
+                name="search" 
+                placeholder="Search" 
+                onChange={e => this.setState({ searchQuery: e.target.value })}
+              />
+              <InputGroupAddon addonType="append">
+                <Button color='success'><FaSearch/></Button>
+              </InputGroupAddon>
+            </InputGroup>
+          </Form>
+
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            {/* Left Buttons */}
+            <Nav className="mr-auto d-flex align-items-center" navbar>
               <NavItem>
-                <NavLink tag={Link} to="/">Home</NavLink>
+                <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/post">Post</NavLink>
+                <NavLink href="#about">About</NavLink>
               </NavItem>
-              <NavItem style={{paddingLeft:"0.3rem"}}>
-                <Button color="success" tag={Link} to="/login">Login</Button>
+              <NavItem>
+                <NavLink href="#post">Post</NavLink>
               </NavItem>
-              <UncontrolledDropdown>
-                <DropdownToggle nav caret>
-                  More
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem tag={Link} to="/dashboard">
-                    Dashboard
-                  </DropdownItem>
-                  <DropdownItem tag={Link} to="/about">
-                    About
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="#dashboard/messages">Dashboard</NavLink>
+              </NavItem>
+            </Nav>
+            {/* Right Buttons */}
+            <Nav className="ml-auto d-flex align-items-center" navbar>
+              <NavItem>
+                <NavLink href="#login">Login</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#signup">Sign Up</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
+
         </Navbar>
-      </div>
+      </>
     )
   }
 
 }
 
-export default HeaderBar;
+export default withRouter(HeaderBar);
